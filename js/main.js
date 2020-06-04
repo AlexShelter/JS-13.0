@@ -7,3 +7,4 @@ let period;
 
 alert('hello');
 
+console.log('world');
