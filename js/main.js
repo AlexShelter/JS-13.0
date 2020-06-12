@@ -12,16 +12,10 @@ let addExpenses = prompt('Перечислите возможные расход
 console.log(addExpenses.length);
 
 let mission = 90000000;
-let period = 1;
 
-console.log('Период равен ' + period + ' месяцев. ');
-console.log('Цель заработать ' + mission +' долларов.');
 
 console.log(addExpenses.toLowerCase());
 console.log(addExpenses.split(', '));
-
-let budgetDay = money/30;
-console.log(budgetDay);
 
 
 
@@ -37,10 +31,10 @@ let amount2 = +prompt('Во сколько это обойдется?');
 let budgetMonth = money - amount1 - amount2;
 console.log('Бюджет на месяц: ', budgetMonth);
 
-budgetDay = Math.floor(budgetMonth / 30);
+let budgetDay = Math.floor(budgetMonth / 30);
 console.log('Бюджет на день: ', budgetDay);
 
-period = Math.ceil(mission / budgetDay);
+let period = Math.ceil(mission / budgetDay);
 console.log('Цель будет достигнута за: ' + period + ' месяцев.');
 
 if (budgetDay > 1200) {
