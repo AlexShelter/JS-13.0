@@ -1,14 +1,14 @@
 'use strict'
-let money = 300000;
+let money = +prompt('Ваш месячный доход?');
 console.log(typeof money);
 
 let income = 'freelance';
 console.log(typeof income);
 
-let deposit = false;
+let deposit = confirm('Есть ли у вас депозит в банке?');
 console.log(typeof deposit);
 
-let addExpenses = 'Internet, Taxi, Phone';
+let addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую.');;
 console.log(addExpenses.length);
 
 let mission = 90000000;
@@ -23,10 +23,10 @@ console.log(addExpenses.split(', '));
 let budgetDay = money/30;
 console.log(budgetDay);
 
-money = +prompt('Ваш месячный доход?');
-addExpenses = prompt('Перечислите возможные расходы за рассчитываемый период через запятую.');
+
+
 console.log(addExpenses.split(', '));
-deposit = confirm('Есть ли у вас депозит в банке?');
+
 
 let expenses1 = prompt('Введите обязательную статью расходов?');
 let amount1 = +prompt('Во сколько это обойдется?');
