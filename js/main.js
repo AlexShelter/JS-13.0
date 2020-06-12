@@ -23,7 +23,7 @@ let expenses1, expenses2;
 // let expenses2 = prompt('Введите обязательную статью расходов?', 'такси');
 // let amount2 = +prompt('Во сколько это обойдется?', '10000');
 
-let start = function() {
+const start = function() {
   
   do {
     money = prompt('Ваш месячный доход?');
@@ -34,7 +34,7 @@ let start = function() {
 
 start();
 
-let sumCheck = function() {
+const sumCheck = function() {
   let sumValue;
   do {
     sumValue = prompt('Во сколько это обойдется?');
