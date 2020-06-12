@@ -56,8 +56,6 @@ let getExpensesMonth = function() {
     sum += +sumCheck();
 
   }
-
-  console.log(sum);
   return sum;
 }
 
